@@ -9,7 +9,7 @@ const tagClass = { ai: 'tag-ai', bc: 'tag-bc', ag: 'tag-ag' };
 export default function Projects() {
   const { t } = useLang();
   const p = t.projects;
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.15 });
 
   return (
     <motion.section
@@ -17,8 +17,8 @@ export default function Projects() {
       className="projects-section"
       ref={ref}
       initial={{ opacity: 0, x: -150 }}
-      animate={inView ? { opacity: 1, x: 0 } : {}}
-      transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
+      animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -150 }}
+      transition={{ duration: 1.3, ease: [0.22, 1, 0.36, 1] }}
     >
       <Container>
         <div className="text-center mb-5">

@@ -1,6 +1,6 @@
 .contact-section {
   background: var(--dark-bg);
-  padding: 7rem 0;
+  padding: 5rem 0 4rem;
   text-align: center;
 }
 .contact-sub {
@@ -10,14 +10,14 @@
   margin: 0.5rem auto 0;
   line-height: 1.7;
 }
-.contact-info-title {
+.contact-info-text h3 {
   font-family: var(--font-serif);
   font-size: 1.4rem;
   color: #fff;
   margin-bottom: 0.6rem;
   text-align: left;
 }
-.contact-info-sub {
+.contact-info-text p {
   font-size: 0.88rem;
   color: var(--muted-dark);
   line-height: 1.7;
@@ -37,8 +37,6 @@
   font-size: 1.1rem; color: var(--accent);
   flex-shrink: 0;
 }
-
-/* Form */
 .contact-form label {
   display: block;
   font-size: 0.73rem;
@@ -71,7 +69,6 @@
 .contact-form textarea.error { border-color: #c0392b; }
 .contact-form select option { background: #1A1A1A; }
 .contact-form textarea { resize: vertical; min-height: 118px; }
-
 .btn-submit {
   width: 100%;
   padding: 0.88rem;
