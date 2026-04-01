@@ -6,17 +6,17 @@ export const translations = {
   en: {
     nav: { services: 'Services', projects: 'Projects', contact: 'Contact' },
     hero: {
-      eyebrow: 'AI · Blockchain · Agile',
+      eyebrow: 'AI - Blockchain - Agile',
       h1a: 'Intelligent',
       h1em: 'systems',
       h1b: 'for modern business',
-      sub: 'We help organizations boost performance through AI-driven solutions, blockchain integration, and Agile methodologies — at every stage of their production.',
+      sub: 'We help organizations boost performance through AI-driven solutions, blockchain integration, and Agile methodologies at every stage of their production.',
       cta1: 'View Projects',
       cta2: 'Get in Touch',
       pill1: 'AI Consulting',
       pill2: 'Blockchain',
       pill3: 'Agile Transformation',
-      stat1num: '3×',
+      stat1num: '3 times',
       stat1label: 'Average productivity gain',
       stat2num: '100%',
       stat2label: 'End-to-end stage coverage',
@@ -27,7 +27,7 @@ export const translations = {
       sub: 'From planning to delivery, we embed intelligence and agility at every stage of your organization.',
       cards: [
         { icon: '🤖', title: 'AI Integration', body: 'We embed machine learning models into your production pipeline — from demand forecasting and quality control to predictive maintenance and intelligent automation.' },
-        { icon: '⛓', title: 'Blockchain Solutions', body: 'Transparent, tamper-proof systems for supply chain traceability, smart contracts, and decentralized data management — bringing trust to every transaction.' },
+        { icon: '⛓', title: 'Blockchain Solutions', body: 'Transparent, tamper-proof systems for supply chain traceability, smart contracts, and decentralized data management bringing trust to every transaction.' },
         { icon: '⚡', title: 'Agile Transformation', body: 'We redesign your planning, organization, and quality assurance stages using Agile principles — making your teams faster, more adaptive, and consistently aligned.' },
       ],
     },
@@ -62,11 +62,11 @@ export const translations = {
   el: {
     nav: { services: 'Υπηρεσίες', projects: 'Έργα', contact: 'Επικοινωνία' },
     hero: {
-      eyebrow: 'ΤΝ · Blockchain · Agile',
+      eyebrow: 'ΤΝ - Blockchain - Agile',
       h1a: 'Έξυπνα',
       h1em: 'συστήματα',
       h1b: 'για τη σύγχρονη επιχείρηση',
-      sub: 'Βοηθάμε οργανισμούς να αυξήσουν την απόδοσή τους μέσω λύσεων ΤΝ, ενσωμάτωσης blockchain και Agile μεθοδολογιών — σε κάθε στάδιο της παραγωγής τους.',
+      sub: 'Βοηθάμε οργανισμούς να αυξήσουν την απόδοσή τους μέσω λύσεων ΤΝ, ενσωμάτωσης blockchain και Agile μεθοδολογιών σε κάθε στάδιο της παραγωγής τους.',
       cta1: 'Δείτε Έργα',
       cta2: 'Επικοινωνήστε',
       pill1: 'Συμβουλευτική ΤΝ',
