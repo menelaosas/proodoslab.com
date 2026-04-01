@@ -9,36 +9,32 @@ const iconClasses = ['icon-ai', 'icon-bc', 'icon-ag'];
 export default function Services() {
   const { t } = useLang();
   const s = t.services;
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.15 });
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <section id="services" className="services-section">
+    <motion.section
+      id="services"
+      className="services-section"
+      ref={ref}
+      initial={{ opacity: 0, x: 150 }}
+      animate={inView ? { opacity: 1, x: 0 } : {}}
+      transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
+    >
       <Container>
-        <motion.div
-          ref={ref}
-          className="text-center mb-5"
-          initial={{ opacity: 0, y: 24 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-        >
+        <div className="text-center mb-5">
           <span className="section-label" style={{ color: 'var(--accent)' }}>{s.label}</span>
           <h2 style={{ color: '#fff' }}>{s.h2}</h2>
           <p className="services-sub">{s.sub}</p>
-        </motion.div>
+        </div>
 
         <Row className="g-4">
           {s.cards.map((card, i) => (
             <Col key={i} md={4}>
               <motion.div
                 className="service-card"
-                initial={{ opacity: 0, y: 32 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.55, delay: 0.15 + i * 0.1 }}
                 whileHover={{ y: -5, borderColor: 'var(--accent)' }}
               >
-                <div className={`service-icon ${iconClasses[i]}`}>
-                  {card.icon}
-                </div>
+                <div className={`service-icon ${iconClasses[i]}`}>{card.icon}</div>
                 <h3>{card.title}</h3>
                 <p>{card.body}</p>
               </motion.div>
@@ -46,6 +42,6 @@ export default function Services() {
           ))}
         </Row>
       </Container>
-    </section>
+    </motion.section>
   );
 }

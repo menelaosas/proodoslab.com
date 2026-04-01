@@ -12,27 +12,25 @@ export default function Projects() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <section id="projects" className="projects-section">
+    <motion.section
+      id="projects"
+      className="projects-section"
+      ref={ref}
+      initial={{ opacity: 0, x: -150 }}
+      animate={inView ? { opacity: 1, x: 0 } : {}}
+      transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
+    >
       <Container>
-        <motion.div
-          ref={ref}
-          className="text-center mb-5"
-          initial={{ opacity: 0, y: 24 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-        >
+        <div className="text-center mb-5">
           <span className="section-label" style={{ color: 'var(--accent)' }}>{p.label}</span>
           <h2 style={{ color: '#0D0D0D' }}>{p.h2}</h2>
-        </motion.div>
+        </div>
 
         <Row className="g-4">
           {p.items.map((item, i) => (
             <Col key={i} md={4}>
               <motion.div
                 className="project-card"
-                initial={{ opacity: 0, y: 32 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.55, delay: 0.1 + i * 0.08 }}
                 whileHover={{ y: -5 }}
               >
                 <span className={`project-tag ${tagClass[item.tagType]}`}>{item.tag}</span>
@@ -43,6 +41,6 @@ export default function Projects() {
           ))}
         </Row>
       </Container>
-    </section>
+    </motion.section>
   );
 }

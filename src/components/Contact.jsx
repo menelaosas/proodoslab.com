@@ -22,10 +22,16 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="contact-section">
+    <motion.section
+      id="contact"
+      className="contact-section"
+      ref={ref}
+      initial={{ opacity: 0, x: 150 }}
+      animate={inView ? { opacity: 1, x: 0 } : {}}
+      transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
+    >
       <Container>
         <motion.div
-          ref={ref}
           className="text-center mb-5"
           initial={{ opacity: 0, y: 24 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -129,6 +135,6 @@ export default function Contact() {
           </Col>
         </Row>
       </Container>
-    </section>
+    </motion.section>
   );
 }

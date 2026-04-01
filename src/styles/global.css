@@ -16,7 +16,7 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body { font-family: var(--font-sans); font-size: 16px; line-height: 1.6; }
+body { font-family: var(--font-sans); font-size: 16px; line-height: 1.6; overflow-x: hidden; }
 
 /* Bootstrap overrides */
 .btn:focus, .btn:focus-visible, input:focus, textarea:focus, select:focus {
