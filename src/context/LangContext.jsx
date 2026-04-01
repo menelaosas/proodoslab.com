@@ -49,7 +49,7 @@ export const translations = {
       sub: "Whether you're exploring AI for the first time or need a blockchain audit or Agile coach, we're happy to talk about how Proodoslab can help your organization.",
       infoTitle: 'Contact us',
       infoSub: "Fill in the form and we'll get back to you within one business day.",
-      location: 'Athens, Greece',
+      location: 'Athens, Gerakas, Greece',
       fname: 'First Name', lname: 'Last Name', company: 'Company',
       email: 'Email', interest: 'Area of Interest', message: 'Message',
       placeholder: { fname: 'Maria', lname: 'Papadaki', company: 'Your company', email: 'maria@company.com', message: 'Tell us about your project...' },
@@ -57,7 +57,7 @@ export const translations = {
       options: ['AI Integration', 'Blockchain', 'Agile Transformation', 'All Three'],
       submit: 'Send Message', sent: 'Sent ✓',
     },
-    footer: '© 2025 Proodoslab. All rights reserved.',
+    footer: '© 2026 Proodoslab. All rights reserved.',
   },
   el: {
     nav: { services: 'Υπηρεσίες', projects: 'Έργα', contact: 'Επικοινωνία' },
@@ -105,7 +105,7 @@ export const translations = {
       sub: 'Είτε εξερευνάτε την ΤΝ για πρώτη φορά είτε χρειάζεστε έλεγχο blockchain ή Agile coach, χαιρόμαστε να συζητήσουμε πώς η Proodoslab μπορεί να βοηθήσει τον οργανισμό σας.',
       infoTitle: 'Επικοινωνήστε μαζί μας',
       infoSub: 'Συμπληρώστε τη φόρμα και θα επικοινωνήσουμε μαζί σας εντός μιας εργάσιμης ημέρας.',
-      location: 'Αθήνα, Ελλάδα',
+      location: 'Αθήνα, Γέρακας, Ελλάδα',
       fname: 'Όνομα', lname: 'Επώνυμο', company: 'Εταιρεία',
       email: 'Email', interest: 'Τομέας Ενδιαφέροντος', message: 'Μήνυμα',
       placeholder: { fname: 'Μαρία', lname: 'Παπαδάκη', company: 'Η εταιρεία σας', email: 'maria@company.com', message: 'Πείτε μας για το έργο σας...' },
@@ -113,7 +113,7 @@ export const translations = {
       options: ['Ενσωμάτωση ΤΝ', 'Blockchain', 'Agile Μεταμόρφωση', 'Και τα τρία'],
       submit: 'Αποστολή Μηνύματος', sent: 'Απεστάλη ✓',
     },
-    footer: '© 2025 Proodoslab. Με επιφύλαξη παντός δικαιώματος.',
+    footer: '© 2026 Proodoslab. Με επιφύλαξη παντός δικαιώματος.',
   },
 };
 

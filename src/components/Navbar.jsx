@@ -29,9 +29,12 @@ export default function AppNavbar() {
       className={`app-nav ${scrolled ? 'scrolled' : ''}`}
     >
       <Container fluid className="nav-inner">
-        {/* Logo */}
         <Navbar.Brand href="#" className="nav-logo" onClick={() => scrollTo('hero')}>
-          <div className="logo-mark" />
+          <img
+            src="/logo.svg"
+            alt="Proodoslab logo"
+            className="nav-logo-img"
+          />
           <span className="logo-text">Proodos<span>lab</span></span>
         </Navbar.Brand>
 
@@ -46,7 +49,6 @@ export default function AppNavbar() {
             ))}
           </Nav>
 
-          {/* Language toggle */}
           <div className="lang-toggle">
             {['en', 'el'].map(l => (
               <button

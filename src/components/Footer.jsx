@@ -72,7 +72,7 @@ export default function Footer() {
         {/* ── BOTTOM BAR ── */}
         <div className="footer-bottom">
           <p>{t.footer}</p>
-          <p className="footer-built">Built with React · Hosted on GitHub Pages</p>
+          <p className="footer-built">Built with React - Hosted on GitHub Pages</p>
         </div>
 
       </Container>

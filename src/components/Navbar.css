@@ -2,7 +2,7 @@
   background: rgba(247, 245, 240, 0.92);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-light);
-  padding: 1rem 0;
+  padding: 0.6rem 0;
   transition: box-shadow 0.3s;
 }
 .app-nav.scrolled {
@@ -19,30 +19,11 @@
   gap: 0.6rem;
   text-decoration: none;
 }
-.logo-mark {
-  width: 34px; height: 34px;
-  background: #0D0D0D;
-  border-radius: 8px;
-  position: relative;
-  flex-shrink: 0;
-}
-.logo-mark::before {
-  content: '';
-  position: absolute;
-  width: 17px; height: 17px;
-  border: 2.5px solid var(--accent);
-  border-radius: 50%;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-}
-.logo-mark::after {
-  content: '';
-  position: absolute;
-  width: 5px; height: 5px;
-  background: #fff;
-  border-radius: 50%;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
+.nav-logo-img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
 }
 .logo-text {
   font-family: var(--font-serif);
