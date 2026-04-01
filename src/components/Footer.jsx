@@ -23,7 +23,7 @@ export default function Footer() {
             <Col md={4}>
               <div className="footer-logo">Proodos<span>lab</span></div>
               <p className="footer-tagline">
-                AI · Blockchain · Agile consulting for organizations that want to move faster and smarter.
+                AI - Blockchain - Agile consulting for organizations that want to move faster and smarter.
               </p>
               <p className="footer-contact-line">📧 hello@proodoslab.com</p>
               <p className="footer-contact-line">📍 Athens, Greece</p>

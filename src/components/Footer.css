@@ -82,12 +82,12 @@
 
 .footer-bottom p {
   font-size: 0.75rem;
-  color: #444;
+  color: #fff;
   margin: 0;
 }
 
 .footer-built {
-  color: #333 !important;
+  color: #fff !important;
 }
 
 @media (max-width: 767px) {
