@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap');
+
+:root {
+  --light-bg: #F7F5F0;
+  --dark-bg: #0D0D0D;
+  --accent: #1A6B4A;
+  --accent-hover: #155a3c;
+  --accent-light: #E8F3EE;
+  --border-light: #E0DDD7;
+  --border-dark: #2A2A2A;
+  --muted-light: #7A7A72;
+  --muted-dark: #888888;
+  --font-serif: 'DM Serif Display', serif;
+  --font-sans: 'DM Sans', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-sans); font-size: 16px; line-height: 1.6; }
+
+/* Bootstrap overrides */
+.btn:focus, .btn:focus-visible, input:focus, textarea:focus, select:focus {
+  box-shadow: 0 0 0 3px rgba(26, 107, 74, 0.25) !important;
+  outline: none !important;
+}
+
+/* Section shared */
+.section-label {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+/* Serif headings */
+h1, h2, h3, .serif { font-family: var(--font-serif); }
+
+h1 {
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+h2 {
+  font-size: clamp(1.9rem, 3vw, 2.8rem);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }

@@ -1,0 +1,23 @@
+.app-footer {
+  background: var(--dark-bg);
+  border-top: 1px solid #1E1E1E;
+  padding: 2rem 0;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.footer-logo {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: #fff;
+}
+.footer-logo span { color: var(--accent); }
+.app-footer p { font-size: 0.76rem; color: #555; margin: 0; }
+
+@media (max-width: 576px) {
+  .footer-inner { flex-direction: column; text-align: center; }
+}

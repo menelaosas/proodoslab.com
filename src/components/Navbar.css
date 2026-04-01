@@ -1,0 +1,97 @@
+.app-nav {
+  background: rgba(247, 245, 240, 0.92);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-light);
+  padding: 1rem 0;
+  transition: box-shadow 0.3s;
+}
+.app-nav.scrolled {
+  box-shadow: 0 2px 24px rgba(0,0,0,0.07);
+}
+.nav-inner {
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+.logo-mark {
+  width: 34px; height: 34px;
+  background: #0D0D0D;
+  border-radius: 8px;
+  position: relative;
+  flex-shrink: 0;
+}
+.logo-mark::before {
+  content: '';
+  position: absolute;
+  width: 17px; height: 17px;
+  border: 2.5px solid var(--accent);
+  border-radius: 50%;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logo-mark::after {
+  content: '';
+  position: absolute;
+  width: 5px; height: 5px;
+  background: #fff;
+  border-radius: 50%;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logo-text {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: #0D0D0D;
+  letter-spacing: -0.02em;
+}
+.logo-text span { color: var(--accent); }
+
+.nav-links .nav-link {
+  color: var(--muted-light) !important;
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 0.25rem 0.75rem !important;
+  transition: color 0.2s;
+}
+.nav-links .nav-link:hover { color: #0D0D0D !important; }
+
+.lang-toggle {
+  display: flex;
+  gap: 0.2rem;
+  background: var(--border-light);
+  border-radius: 20px;
+  padding: 0.18rem;
+}
+.lang-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.22rem 0.7rem;
+  border-radius: 14px;
+  color: var(--muted-light);
+  transition: all 0.2s;
+}
+.lang-btn.active { background: #0D0D0D; color: #fff; }
+
+.nav-toggler {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.nav-toggler:focus { box-shadow: none !important; }
+
+@media (max-width: 767px) {
+  .nav-inner { padding: 0 1.5rem; }
+  .navbar-collapse { padding: 1rem 0; }
+  .nav-links { gap: 0; }
+  .lang-toggle { margin-top: 0.75rem; }
+}
