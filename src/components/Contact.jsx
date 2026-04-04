@@ -15,10 +15,12 @@ export default function Contact() {
 
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
-  const onSubmit = (data) => {
-    console.log('Form data:', data);
-    setSubmitted(true);
-    setTimeout(() => { setSubmitted(false); reset(); }, 3500);
+  const onSubmit = async (data) => {
+    await fetch("https://formspree.io/f/xjgppvbw", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
   };
 
   return (
