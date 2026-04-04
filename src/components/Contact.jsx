@@ -15,14 +15,28 @@ export default function Contact() {
 
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
-  const onSubmit = async (data) => {
-    await fetch("https://formspree.io/f/xjgppvbw", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
-  };
+  const [error, setError] = useState(false);
 
+  const onSubmit = async (data) => {
+    setError(false);
+    try {
+      const res = await fetch("https://formspree.io/f/xjgppvbw", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        setSubmitted(true);  // ← this was missing!
+        reset();             // ← clears the form fields
+      } else {
+        setError(true);      // ← server responded with an error
+      }
+    } catch (e) {
+      setError(true);        // ← network failure
+    }
+  };
+  
   return (
     <motion.section
       id="contact"
@@ -100,6 +114,11 @@ export default function Contact() {
                     {...register('message', { required: true })} />
                 </Col>
                 <Col sm={12}>
+                  {error && (
+                    <p style={{ color: 'red', marginBottom: '8px' }}>
+                      Something went wrong. Please try again.
+                    </p>
+                  )}
                   <button type="submit" className={`btn-submit ${submitted ? 'sent' : ''}`}>
                     {submitted ? c.sent : c.submit}
                   </button>
