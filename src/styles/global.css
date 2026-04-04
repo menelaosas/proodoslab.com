@@ -18,6 +18,10 @@
 html { scroll-behavior: smooth; }
 body { font-family: var(--font-sans); font-size: 16px; line-height: 1.6; overflow-x: hidden; }
 
+html, body {
+  overflow-x: hidden;
+}
+
 /* Bootstrap overrides */
 .btn:focus, .btn:focus-visible, input:focus, textarea:focus, select:focus {
   box-shadow: 0 0 0 3px rgba(26, 107, 74, 0.25) !important;
